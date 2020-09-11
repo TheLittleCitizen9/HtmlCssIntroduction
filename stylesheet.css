@@ -1,0 +1,64 @@
+body {
+    font-family: 'Anaheim';
+    font-size: 1.2em;
+    background-color: #A9D7D1;
+  }
+  
+  h1 {
+    font-size: 50px;
+    text-transform: capitalize;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+  }
+
+  #description{
+    text-align: center;
+  }
+  
+  form {
+    margin: 0 auto;
+    width: 70%;
+    padding: 1em;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+    justify-items: start;
+  }
+
+  #survey-form {
+    background-color: white;
+  }
+  
+  fieldset { 
+    border:none;
+    margin: 0 auto;
+   }
+
+  #number {
+    width: 150px;
+  }
+  
+  .grid-container{
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 0px 20px;
+  }
+
+  div + div {
+    margin-top: 1em;
+  }
+  
+  input, textarea {
+    width: 200px;
+    border: 1px solid #999;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  
+  #dropdown2, #dropdown{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  textarea {
+    vertical-align: top;
+    height: 5em;
+  }
+  
+  
