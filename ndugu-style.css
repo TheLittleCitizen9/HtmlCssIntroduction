@@ -16,7 +16,7 @@ body{
 }
 
 #logo {
-    padding-left: 5%;
+    padding-left: 2%;
     width: 10%;
     float: left;
 }
@@ -50,6 +50,8 @@ body{
     height: 60px;
     background: #fff;
     padding-bottom: 15px;
+    background-image: initial;
+    background-color: white
 }
 
 ul{
@@ -64,13 +66,7 @@ div {
 }
 
 b{
-    font-weight: bolder;
-    color: black;
-}
-
-.navigation {
-    background-image: initial;
-    background-color: white
+    color: grey;
 }
 
 li{
@@ -78,23 +74,28 @@ li{
     opacity: 1;
 }
 
-li a {
-    text-decoration-color: initial;
-    text-decoration: none;
-    text-align: center;
-}
-
 #navBar li a {
     padding: 15px 30px;
     transition: ease-in-out;
     transition: 0.4s;
-}
-
-.active {
+    text-decoration-color: initial;
+    text-decoration: none;
+    text-align: center;
     background-image: initial;
     color: rgb(232, 230, 227);
 }
 
 li a:hover {
     background-color: whitesmoke;
-  }
+}
+
+li a.active {
+    border-style: solid;
+    border-color: white;
+    border-top-color: lightseagreen;
+    border-top-width: 10px;
+}
+
+li a.active b{
+    color: black;
+}
