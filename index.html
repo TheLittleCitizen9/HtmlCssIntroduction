@@ -6,63 +6,43 @@
 </head>
 <body>
     <h1 id="title">Survey Form</h1>
-    <form id="survey-form" action="/my-handling-form-page" method="post">
+    <form id="survey-form">
         
         <p id="description">Let us know how we can improve freeCodeCamp</p>
         
-        <fieldset>
-        <div>
-            <label id="name-label" for="name">Name:</label>
-            <input type="text" required id="name" name="user_name" placeholder="Enter your name"> 
-        </div>
-        <div>
-            <label id="email-label" for="Email">Email:</label>
-            <input type="email" required id="email" name="user_email" placeholder="Enter your email">   
-        </div>
-        <div>
-        <label id="age-label" for="Age">Age:</label>
-        <input type="age" required id="age" name="user_age" placeholder="Age">   
-        </div>
-        </fieldset>
-    
-        <fieldset>
-        <div>
-        <label for="role">Which option best describes your current role?</label>
+        <label id="name-label" for="name">* Name:</label>
+        <input type="text" required id="name" name="user_name" placeholder="Enter your name"> 
+
+        <label id="email-label" for="Email">* Email:</label>
+        <input type="email" required id="email" name="user_email" placeholder="Enter your email"> 
+        
+        <label id="number-label" for="Age">* Age:</label>
+        <input type="number" required id="number" name="user_age" placeholder="Enter your age"> 
+
+        <label for="dropdown">Which option best describes your current role?</label>
         <select id="dropdown">
             <option value="student">student</option>
             <option value="teacher">teacher</option>
         </select>
-        </div>
-        </fieldset>
     
-        <fieldset>
-        <div>
-            <label for="option">How likely is that you would recommend freeCodeCamp to a friend?</label>
-            <p>
-            <input type="radio" name="option" value="Definitely" checked> Definitely<br>
-            <input type="radio" name="option" value="Maybe"> Maybe<br>
-            <input type="radio" name="option" value="Not sure"> Not Sure
-            </p>
+        <label target>How likely is that you would recommend freeCodeCamp to a friend?</label>
+        <div id="radio">
+            <label for="1"> <input type="radio" name="option" value="Definitely" checked> Definitely</label>
+            <label for="2"><input type="radio" name="option" value="Maybe"> Maybe</label>
+            <label for="3"><input type="radio" name="option" value="Not sure"> Not Sure</label>
         </div>
-        </fieldset>
     
-        <fieldset>
-        <div>
-        <label for="fcc">What do you like most in FCC:</label>
-        <select id="dropdown2">
+        <label for="dropdown">What do you like most in FCC:</label>
+        <select id="dropdown">
             <option value="Select an option">Select an option</option>
         </select>
+        
+        <label for="Improve">Things that should be improved in the future (Check all that apply)</label>
+        <div id="check">
+            <label for="a"><input type="checkbox" name="front-end" value="front-end"> Front-end Projects</label>
+            <label for="b"><input type="checkbox" name="back-end" value="back-end"> Back-end Projects</label>
+            <label for="c"><input type="checkbox" name="data" value="data"> Data Visualization</label>
         </div>
-        </fieldset>
-    
-        <fieldset>
-        <label for="Gender">Things that should be improved in the future (Check all that apply)</label>
-        <p>
-            <input type="checkbox" name="front-end" value="front-end"> Front-end Projects<br>
-            <input type="checkbox" name="back-end" value="back-end"> Back-end Projects<br>
-            <input type="checkbox" name="data" value="data"> Data Visualization<br>
-        </p>
-        </fieldset>
 </body>
 </html>
 
